@@ -1,0 +1,10 @@
+{
+  "id": "plugin-list-auto",
+  "name": "Plugin List Auto",
+  "version": "0.1.0",
+  "minAppVersion": "1.16.0",
+  "description": "Automatically generates a list of installed plugins in a markdown file.",
+  "author": "Toaster1123",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
