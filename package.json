@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chokidar": "^5.0.0",
     "obsidian": "^1.11.0"
   },
   "name": "auto-plugin-list",
@@ -10,7 +11,8 @@
     "esbuild": "^0.27.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "esbuild main.ts --bundle --outfile=main.js --watch --external:obsidian --target=es2020 --format=cjs --sourcemap",
+    "build": "esbuild main.ts --bundle --outfile=main.js --external:obsidian --target=es2020 --format=cjs --minify"
   },
   "keywords": [],
   "author": "",

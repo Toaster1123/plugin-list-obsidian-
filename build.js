@@ -3,8 +3,9 @@ require("esbuild")
     entryPoints: ["main.ts"],
     bundle: true,
     outfile: "main.js",
-    platform: "node",
-    format: "cjs",
+    platform: "browser",
+    format: "cjs", // ← не iife!
     external: ["obsidian"],
+    target: "es2020",
   })
   .catch(() => process.exit(1));
